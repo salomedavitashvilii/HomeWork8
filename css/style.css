@@ -1,0 +1,226 @@
+/* 1st animation */
+button{
+    margin: 50px;
+    background-color: rgb(230, 123, 180);
+    border-radius: 8px;
+    /* border-color: rgb(227, 124, 179); */
+    border-color: rgb(230, 123, 180);
+    width: 120px;
+    height: 40px;
+    font-size: 8px;
+    color: #fff;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0) inset;
+}
+button:hover{
+    box-shadow: 3px 3px 3px rgb(0, 0, 0) ;
+    text-shadow: 2px 2px 4px #000000;
+}
+/* 2nd animation */
+.racoon{
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 500px;
+}
+.rac{
+    width: 100%;
+    padding: 10px;
+}
+p{
+    padding: 10px;
+}
+.racoon:hover{
+    border: 2px solid pink;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px pink;
+    transition-delay: 0.3s;
+    transition-duration: 2s;
+}
+.rac:hover{
+    border-radius: 6% 6% 0 0;
+    transition-delay: 0.3s;
+    transition-duration: 2s;
+}
+
+/* 3rd animation */
+.coloring{
+  font-size:70px;
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+  animation: rainbow-animation 35s linear infinite;
+}
+
+@keyframes rainbow-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+
+/* 4th animation */
+.spinner {
+  border: 20px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 20px solid #3498db;
+  border-left: 20px solid #ea91ed;
+  border-bottom: 20px solid #ea91ed;
+  border-right: 20px solid #2e956c;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.spinner:hover{
+    animation: none;
+}
+
+/* 5th animation */
+.header{
+    margin: 10px;
+    background-color: #2e956c;
+    height: 50px;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+}
+li{
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+li:hover{
+    color: #ffffff;
+  text-shadow:
+    0 0 5px #cec658,
+    0 0 10px #cec658,
+    0 0 20px #cec658,
+    0 0 40px #e2ec77,
+    0 0 80px #e2ec77,
+    0 0 90px #e2ec77,
+    0 0 100px #e2ec77,
+    0 0 150px #e2ec77;
+}
+
+/* 6th animation */
+.body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+.progress{
+    position: relative;
+    height: 50px;
+    width: 500px;
+    border: 3px solid #211a14;
+    border-radius: 30px;
+}
+.color{
+    text-align: center;
+}
+.progress .color{
+    position: absolute;
+    background-color: pink;
+    width: 0px;
+    height: 100%;
+    border-radius: 30px;
+    animation: progres 4s infinite linear;    
+}
+@keyframes progres{
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
+
+/* 7th animation */
+.container {
+    width: 1440px;
+    height: 600px;
+    border: 5px solid black;
+}
+.ball{
+    margin: 10px;
+    width: 80px;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: game 6s linear infinite;
+}
+@keyframes game {
+    0%{
+        top: 100px;
+        left: 0;
+    }
+    13%{
+        top: 300px;
+        left: 300px;
+    }
+    25%{
+        top: 100px;
+        left: 600px;
+    }
+    37%{
+        top: 300px;
+        left: 900px;
+    }
+    50%{
+        top: 100px;
+        left: 1200px;
+    }
+    62%{
+        top: 300px;
+        left: 900px;
+    }
+    75%{
+        top: 100px;
+        left: 600px;
+    }
+    87%{
+        top: 300px;
+        left: 300px;
+    }
+    100%{
+        top: 100px;
+        left: 0;
+    }
+    
+}
+.grass{
+    /* margin-top: 300px; */
+    width: 100%;
+    height: 100px;
+}
+.fence{
+    border: 7px solid gray;
+    width: 5px;
+    height: 100px;
+    margin-top: 200px;
+    margin-left: 50%;
+}
